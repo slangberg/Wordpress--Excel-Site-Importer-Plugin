@@ -1,6 +1,6 @@
-##Wordpress--Excel-Site-Importer-Plugin##
+##mRedirect: Mobile Redirect jQuery Redirect Plugin##
 Contributors: By Sam Langberg and Mohammad Usama Masood
-Tags:Excel, Converter, Import , Html import
+Tags:Excel, To  WP Converter
 Requires at least: 3.1
 Tested up to: 3.6
 Stable tag: 0.1
@@ -33,16 +33,28 @@ This plugin is still in early beta, it works but not at 100% and some functions 
 - Post Date
 
 ##Required Excel Document  Structure##
-This plug requires a excel 2007 (.xlx) file with a specific set of data in three separate worksheets. The name or order of the worksheets and column do not matter as those are set in the plugin options. Worksheets are listed in the order they are processed 
-**URL MAP WORKSHEET:**
-| Old Url       | Page H1 |  Page H1 | Page Content | Parent Page URL | Page Old Url |
-| ------------- | ------------- | ------------- |------------- |------------- |
-| Full Url  | The Pages h1 which will be added to the top of the content | This is either all the html o go into the content or a google doc link | This must match the url in the url map | This url will only be be saved as meta info |
+This plug requires a excel 2007 (.xlx) file with a specific set of data in three separate worksheets. The name or order of the worksheets and column do not matter as those are set in the plugin options. Worksheets are listed in the order they are processed
+ 
+####URL MAP WORKSHEET:####
+- old url: full url
+- new url: full url
 
-**PAGE WORKSHEET:**
-| Wordpress Page Title      | New URL |
-| ------------- | ------------- |
-| The title that will show in the page list  | Full Url  |
+####PAGE WORKSHEET:#####
+- Wordpress Page Title: title that will show in page list
+- Page Content: this is either the complete html you want to go in the content or a in the future a google doc link
+- Parent Page: this full url has to match the one in the Url map
+- Page H1: this text will be put in an h1 added to the top of the content
+- Page's Old Url: this will be saved in meta info 
+- SEO Page Title: the text that will be in yoast page title option 
+- SEO Meta Description -the text that will be in yoast meta description  option 
+- Custom Permalink - the text that will be in in the custom url option  
+
+####POST WORKSHEET:####
+- Wordpress Post Title: title that will show in page list and in post
+- Post Content: this is either the complete html you want to go in the content or a in the future a google doc link
+- Post Author: the plugin will use this text to create a new user with that name if one does not exist or assign post to a matching existing user 
+- Post Categories: multiple categories must be separated with a comma, the plugin will either create or assign this post to the listed categories  
+- Post Date: the plugin set the posted on date as this must be in Month (spelled out) Day (DD), Year(YYYY)
 
 ##Content Import Summary##
 This plugin uses [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/) to parse html in a specified content column and will perform of number of alterations to the content before import. The plugin also will have the ability to import content from a google doc after the user logs in but this functionality is not working yet.
