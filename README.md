@@ -1,4 +1,4 @@
-##mRedirect: Wordpress--Excel-Site-Importer-PluginWordpress--Excel-Site-Importer-Plugin##
+##Wordpress--Excel-Site-Importer-Plugin##
 - Contributors: By Sam Langberg and Mohammad Usama Masood
 - Tags: Excel, To  WP Converter
 - Requires at least: 3.1
