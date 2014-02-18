@@ -1,11 +1,11 @@
-##mRedirect: Mobile Redirect jQuery Redirect Plugin##
-Contributors: By Sam Langberg and Mohammad Usama Masood
-Tags:Excel, To  WP Converter
-Requires at least: 3.1
-Tested up to: 3.6
-Stable tag: 0.1
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+##mRedirect: Wordpress--Excel-Site-Importer-PluginWordpress--Excel-Site-Importer-Plugin##
+- Contributors: By Sam Langberg and Mohammad Usama Masood
+- Tags: Excel, To  WP Converter
+- Requires at least: 3.1
+- Tested up to: 3.6
+- Stable tag: 0.1
+- License: GPLv2 or later
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 
